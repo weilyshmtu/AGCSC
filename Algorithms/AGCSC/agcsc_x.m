@@ -47,8 +47,8 @@ while iter < maxIter
 
     % update F
     CtC = C'*C;
-    A = alpha*CtC + 2*I;
-    B = C*X + X + alpha * C'*X;
+    A = alpha*CtC + 4*I;
+    B = 2*(C*X + X) + alpha * C'*X;
     F = A\B;
 
     % update Z
